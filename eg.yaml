@@ -1,0 +1,17 @@
+---
+- id: A
+  product: chair
+- id: B
+  precedents:
+  - node: A
+- id: C
+  precedents:
+  - node: A
+  product: table
+- id: D
+  precedents:
+  - node: C
+  - node: B
+- id: E
+  precedents:
+  - node: D
